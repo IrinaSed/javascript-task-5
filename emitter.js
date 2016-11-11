@@ -69,9 +69,9 @@ function getEmitter() {
                     .filter(function (suscription) {
                         suscription.callEvent();
 
-                        return suscription.maxCount > suscription.countCall;
+                        return suscription.maxCount >= suscription.countCall;
                     });
-            });
+            });пше
 
             return this;
         },
